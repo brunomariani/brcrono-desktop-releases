@@ -4,7 +4,7 @@
 
 ## O que é o BR|Crono Desktop?
 
-O BR|Crono Desktop é o app de janela para preparar e conferir as unidades BR Crono antes da prova. Ele faz, com botões e telas, o que o menu do BRCrono CLI já faz: encontrar o leitor na rede, conferir se ele é aprovado e, com ele conectado, ver o diagnóstico, acertar o horário, conferir as antenas, acompanhar as tags ao vivo, baixar os arquivos CSV e rodar o **Teste de Campo** de 4 etapas.
+O BR|Crono Desktop é o app para preparar e conferir as unidades BR Crono antes da prova. Ele faz, com botões e telas, o que o menu do BRCrono CLI já faz: encontrar o leitor na rede, conferir se ele é aprovado e, com ele conectado, ver o diagnóstico, acertar o horário, conferir as antenas, acompanhar as tags ao vivo, baixar os arquivos CSV e rodar o **Teste de Campo** de 4 etapas.
 
 O app se conecta uma vez, na entrada, e mantém essa conexão enquanto você passa de uma tela para outra.
 
