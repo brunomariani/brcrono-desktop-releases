@@ -420,6 +420,7 @@ def parse_markdown(markdown_text: str, styles: dict[str, ParagraphStyle], base_d
     lines = markdown_text.splitlines()
     paragraph: list[str] = []
     index = 0
+    sections_seen = 0
 
     def flush_paragraph() -> None:
         nonlocal paragraph
@@ -436,6 +437,11 @@ def parse_markdown(markdown_text: str, styles: dict[str, ParagraphStyle], base_d
         if not stripped:
             flush_paragraph()
             story.append(Spacer(1, 0.08 * cm))
+            index += 1
+            continue
+
+        # The README's link to download this PDF has no use inside the PDF.
+        if re.fullmatch(r"\**\[[^\]]+\]\([^)]+\.pdf\)\**", stripped):
             index += 1
             continue
 
@@ -475,6 +481,11 @@ def parse_markdown(markdown_text: str, styles: dict[str, ParagraphStyle], base_d
 
         if stripped.startswith("## "):
             flush_paragraph()
+            # Every section after the first starts on a new page; the first
+            # already follows the cover's page break.
+            if sections_seen:
+                story.append(PageBreak())
+            sections_seen += 1
             story.append(Paragraph(format_inline(stripped[3:]), styles["h1"]))
             index += 1
             continue

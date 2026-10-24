@@ -2,13 +2,13 @@
 
 **[Baixar este guia em PDF](Guia-do-Usuario-BR-Crono-Desktop.pdf)**
 
-## O que é o BR|Crono Desktop?
+## 1. O que é o BR|Crono Desktop?
 
 O BR|Crono Desktop é o app para preparar e conferir as unidades BR Crono antes da prova. Ele faz, com botões e telas, o que o menu do BRCrono CLI já faz: encontrar o leitor na rede, conferir se ele é aprovado e, com ele conectado, ver o diagnóstico, acertar o horário, conferir as antenas, acompanhar as tags ao vivo, baixar os arquivos CSV e rodar o **Teste de Campo** de 4 etapas.
 
 O app se conecta uma vez, na entrada, e mantém essa conexão enquanto você passa de uma tela para outra.
 
-## Instalação
+## 2. Instalação
 
 **Requisitos:** Windows 64 bits, com tela de pelo menos 1280 pixels de largura útil. Telas menores (por exemplo, 1366×768 com escala de 125%) não são suportadas.
 
@@ -22,13 +22,13 @@ O app se conecta uma vez, na entrada, e mantém essa conexão enquanto você pas
 
 O **BRCrono CLI continua funcionando**. Pode deixar os dois instalados: o CLI fica como plano B.
 
-## Entrada: escolher o leitor
+## 3. Entrada: escolher o leitor
 
 Ao abrir, o app mostra a tela **Escolher leitor**. Há três caminhos.
 
 ![Tela Escolher leitor](imagens/01-entrada.png)
 
-### Conectar por nome, número ou IP
+### 3.1. Conectar por nome, número ou IP
 
 No campo **Nome, número ou IP**, informe uma das opções e clique em **Conectar**:
 
@@ -36,7 +36,7 @@ No campo **Nome, número ou IP**, informe uma das opções e clique em **Conecta
 - **Nome** — ex.: `BRC50`
 - **Endereço IP** — ex.: `192.168.0.250`
 
-### Buscar na rede
+### 3.2. Buscar na rede
 
 Se não souber qual leitor, use o cartão **Não sabe qual leitor?** e clique em **Buscar leitores**.
 
@@ -45,11 +45,11 @@ Se não souber qual leitor, use o cartão **Não sabe qual leitor?** e clique em
 - Ao final, **Leitores encontrados** lista o resultado. Clique em um para conectar, ou use **Nova busca** ou **Voltar para entrada manual**.
 - Se nada for encontrado, o app mostra **Nenhum leitor conhecido encontrado na rede.** e, logo abaixo, a causa mais provável.
 
-### Conexões recentes
+### 3.3. Conexões recentes
 
 Em **Conexões recentes** ficam os últimos leitores que você abriu neste computador (até 4). Escolha um para conectar de novo. A identidade do leitor é conferida outra vez, como em qualquer conexão.
 
-### A conexão
+### 3.4. A conexão
 
 Durante **Conectando**, o app percorre **Conectar** → **Número de série** → **Lista de aprovados** → **Tela principal**. **Cancelar** interrompe.
 
@@ -59,11 +59,11 @@ Com tudo certo, aparece **Tudo pronto.** com o nome, o IP e o número de série 
 
 ![Leitor aprovado: Tudo pronto.](imagens/02-leitor-aprovado.png)
 
-### Ajuda na entrada
+### 3.5. Ajuda na entrada
 
 O botão **Ajuda**, no alto da tela de entrada (ou a tecla `F1`), abre os **Problemas comuns**, o botão **Registro de erros** e o botão **Verificar atualizações**, sem precisar conectar.
 
-## Acesso por leitor aprovado
+## 4. Acesso por leitor aprovado
 
 Só abrem a tela principal os leitores da lista de aprovados, conferida pelo número de série.
 
@@ -71,7 +71,7 @@ Só abrem a tela principal os leitores da lista de aprovados, conferida pelo nú
 - **Leitor não aprovado** — o app mostra o endereço e o **Número de série detectado**. Esse leitor não abre. Escolha outro com **Escolher outro leitor** ou fale com o administrador pelo canal de suporte.
 - **Não foi possível verificar o leitor** — o leitor não respondeu ou o número de série não pôde ser lido. Confira a rede e use **Tentar novamente** ou **Escolher outro leitor**.
 
-## A tela principal
+## 5. A tela principal
 
 A barra lateral tem três grupos:
 
@@ -83,7 +83,7 @@ No rodapé da barra lateral aparecem as versões (**App** e **Host**).
 
 **Atalhos de teclado:** `Ctrl+1` a `Ctrl+5` abrem **Resumo**, **Hora**, **Antenas**, **Tags** e **Arquivos**; `Ctrl+T` inicia o **Teste de Campo**; `Ctrl+R` atualiza o diagnóstico; `Ctrl+L` troca o leitor; `F1` abre a **Ajuda**.
 
-### Resumo (diagnóstico)
+### 5.1. Resumo (diagnóstico)
 
 O **Resumo do leitor** mostra o **Estado geral** (**Operacional**, **Em atenção** ou **Em alerta**) e os cartões **Identidade**, **Rede**, **Plataforma**, **Leitor e antenas**, **Arquivos** e **Horário**.
 
@@ -93,7 +93,7 @@ O **Resumo do leitor** mostra o **Estado geral** (**Operacional**, **Em atençã
 
 ![Resumo do leitor](imagens/03-resumo.png)
 
-### Hora
+### 5.2. Hora
 
 Compara a **Hora do leitor** com a **Hora do sistema** (o relógio deste computador) e mostra a **Diferença**:
 
@@ -107,7 +107,7 @@ Para acertar, clique em **Sincronizar com sistema**. Essa ação altera o relóg
 
 ![Tela Hora depois de sincronizar](imagens/04-hora.png)
 
-### Antenas
+### 5.3. Antenas
 
 **Portas do leitor** mostra cada porta (no leitor de campo, de **Porta 1** a **Porta 4**) com o **Estado**, o **Tempo energizado**, as **Tags únicas** e as **Leituras totais**. **Reler antenas** lê de novo.
 
@@ -117,7 +117,7 @@ Na captura abaixo, o leitor tem antena só na porta 1; as portas 2, 3 e 4 aparec
 
 ![Tela Antenas](imagens/05-antenas.png)
 
-### Tags (leitura ao vivo)
+### 5.4. Tags (leitura ao vivo)
 
 Clique em **Iniciar leitura ao vivo** para ver as passagens em tempo real, com **Leituras**, **Tags únicas**, **Duração** e o cartão **Leituras por antena**. **Interromper leitura** encerra, e **Nova leitura** começa outra.
 
@@ -125,13 +125,13 @@ Se você sair da tela com a leitura em andamento, o app pergunta antes: **Parar 
 
 ![Leitura de tags ao vivo](imagens/06-tags-ao-vivo.png)
 
-### Arquivos (transferência dos CSV)
+### 5.5. Arquivos (transferência dos CSV)
 
 1. Em **Dia**, escolha a data. **Hoje** aparece primeiro; os demais ficam em **Outros dias**, e o mais recente leva a marca **mais recente** (é o escolhido ao abrir a tela).
 2. Em **Destino**, **Salvar em** mostra onde os arquivos serão gravados: **Downloads (automático)** por padrão. **Escolher pasta…** troca a pasta, e **Usar Downloads** volta ao padrão. A escolha fica salva neste computador.
 3. No cartão **Transferência**, em **Gravar arquivos**, escolha:
    - **Segundos** ou **Milissegundos** — use a precisão que o sistema de classificação do evento sabe ler. A escolha fica salva neste computador e vale para todas as unidades.
-   - **Análise técnica** — só quando alguém pediu uma análise técnica (veja **Fluxos comuns**).
+   - **Análise técnica** — só quando alguém pediu uma análise técnica (veja **6.3. Enviar arquivos para análise técnica**).
 4. Clique em **Transferir**. O app mostra **Preparando transferência…**, **Transferindo arquivos CSV…** e **Finalizando transferência…**, e depois **Transferência concluída.**
 5. **Pasta do leitor** mostra onde os arquivos ficaram, e **Abrir pasta** abre essa pasta.
 
@@ -139,7 +139,7 @@ Se você sair da tela com a leitura em andamento, o app pergunta antes: **Parar 
 
 ![Transferência concluída](imagens/08-transferencia-concluida.png)
 
-### Teste de Campo
+### 5.6. Teste de Campo
 
 Uma jornada guiada de 4 etapas, para validar o leitor antes da largada:
 
@@ -163,19 +163,19 @@ Na captura abaixo, o teste terminou com alertas porque só a porta 1 tem antena.
 
 ![Resumo final do Teste de Campo](imagens/11-teste-resumo-final.png)
 
-## Fluxos comuns
+## 6. Fluxos comuns
 
-### Preparar uma unidade antes da prova
+### 6.1. Preparar uma unidade antes da prova
 1. Conecte ao leitor (por nome, número, IP, busca ou recentes) e clique em **Abrir tela principal**.
 2. Confira o **Estado geral** no **Resumo**.
 3. Clique em **Iniciar teste** e siga as 4 etapas do **Teste de Campo**, revisando cada uma.
 
-### Baixar os CSV do dia
+### 6.2. Baixar os CSV do dia
 1. Abra **Arquivos**.
 2. Escolha o dia em **Dia** e confira **Salvar em** e **Gravar arquivos**.
 3. Clique em **Transferir** e use **Abrir pasta** para ver os arquivos.
 
-### Enviar arquivos para análise técnica
+### 6.3. Enviar arquivos para análise técnica
 Quando uma unidade captou mal numa prova e alguém pediu uma análise técnica:
 1. Abra **Arquivos** e escolha a data da prova em **Dia**.
 2. Em **Gravar arquivos**, escolha **Análise técnica**. O app avisa: **Os arquivos não serão convertidos. A escolha vale só para a próxima transferência.**
@@ -185,33 +185,33 @@ Quando uma unidade captou mal numa prova e alguém pediu uma análise técnica:
 
 ![Arquivos com Análise técnica escolhida](imagens/12-arquivos-analise-tecnica.png)
 
-### Trocar de leitor
+### 6.4. Trocar de leitor
 1. Clique em **Trocar leitor** na barra lateral e confirme.
 2. Os leitores encontrados nesta sessão continuam na lista **Encontrados nesta sessão**.
 3. **Desconectar** também encerra a sessão, mas limpa essa lista.
 
-## Solução de problemas
+## 7. Solução de problemas
 
 A tela **Ajuda** (e o botão **Ajuda** na entrada) traz os **Problemas comuns** com orientação. Os casos mais frequentes:
 
-### O leitor não conecta
+### 7.1. O leitor não conecta
 - Confira se a unidade está ligada e se o computador e o leitor estão na mesma rede.
 - Confira o nome, número ou IP informado, ou use **Buscar leitores**.
 - Tente de novo pela tela de entrada.
 
-### Wi-Fi e cabo de rede ao mesmo tempo
+### 7.2. Wi-Fi e cabo de rede ao mesmo tempo
 Se o app mostrar **Wi-Fi e cabo de rede estão na mesma rede**, desconecte o Wi-Fi e busque de novo. Com os dois na mesma rede, alguns leitores podem ficar invisíveis à busca.
 
-### A conexão com o leitor foi perdida
+### 7.3. A conexão com o leitor foi perdida
 Se a unidade perder energia ou o cabo se soltar, o app mostra **A conexão com o leitor foi perdida.** Confira energia, cabo e rede e clique em **Conecte novamente**: o app verifica a identidade do leitor de novo antes de reabrir a tela principal. Um **Teste de Campo** em andamento termina e precisa ser refeito.
 
-### Ação demorada ou expirada
+### 7.4. Ação demorada ou expirada
 O leitor pode estar ocupado ou a rede lenta. Aguarde alguns instantes e tente de novo; a sessão continua aberta.
 
-### O serviço de comunicação com o leitor não está disponível
-O app não consegue falar com nenhum leitor. Abra o **Registro de erros** pelo botão dessa tela e envie ao suporte (veja **Suporte**).
+### 7.5. O serviço de comunicação com o leitor não está disponível
+O app não consegue falar com nenhum leitor. Abra o **Registro de erros** pelo botão dessa tela e envie ao suporte (veja **9. Suporte**).
 
-## Atualizações
+## 8. Atualizações
 
 As atualizações chegam sozinhas: ao abrir, com internet, o app procura uma versão nova e a baixa em segundo plano. Quando ela termina de baixar, aparece **Atualização disponível** no rodapé da barra lateral e na tela **Ajuda**.
 
@@ -219,7 +219,7 @@ A atualização **só é instalada quando você clica em Reiniciar**. Fechar o a
 
 Para procurar uma versão nova na hora, use **Verificar atualizações** na tela **Ajuda**. O app responde **O app está atualizado · versão {versão}** ou **Baixando a atualização · versão {versão}**. Sem internet, aparece **Não foi possível verificar atualizações.**
 
-## Suporte
+## 9. Suporte
 
 Para dúvidas ou problemas, fale com o administrador pelo canal de suporte. Envie:
 
