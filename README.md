@@ -109,9 +109,11 @@ Para acertar, clique em **Sincronizar com sistema**. Essa ação altera o relóg
 
 ### Antenas
 
-**Portas do leitor** mostra cada porta (**Porta 1**, **Porta 2**…) com o **Estado**, o **Tempo energizado**, as **Tags únicas** e as **Leituras totais**. **Reler antenas** lê de novo.
+**Portas do leitor** mostra cada porta (no leitor de campo, de **Porta 1** a **Porta 4**) com o **Estado**, o **Tempo energizado**, as **Tags únicas** e as **Leituras totais**. **Reler antenas** lê de novo.
 
 Uma porta **desabilitada** é uma porta sem antena em uso ou com o cabo solto: as duas situações aparecem iguais. Se a porta deveria estar em uso, confira o cabo e o conector. **As leituras seguem pelas portas habilitadas.**
+
+Na captura abaixo, o leitor tem antena só na porta 1; as portas 2, 3 e 4 aparecem desabilitadas.
 
 ![Tela Antenas](imagens/05-antenas.png)
 
@@ -156,6 +158,8 @@ Clique em **Iniciar teste**. Depois de cada etapa o teste pausa para você revis
 ![Teste de Campo pausado na revisão da etapa 1](imagens/09-teste-etapa1.png)
 
 Durante a pausa você pode visitar outras telas; o **Resumo** mostra **Retomar teste** para voltar. Após a etapa 4, **Concluir teste** abre o **Resumo final**: **Sucesso completo**, **Teste concluído com alertas**, **Teste concluído com falhas** ou **Falha por ausência de antenas**. Sem nenhuma porta operacional, as etapas 3 e 4 não rodam. **Refazer teste** recomeça, e **Voltar ao Resumo** sai.
+
+Na captura abaixo, o teste terminou com alertas porque só a porta 1 tem antena.
 
 ![Resumo final do Teste de Campo](imagens/11-teste-resumo-final.png)
 
